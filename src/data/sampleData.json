@@ -1,0 +1,1189 @@
+{
+ "params": {
+  "planDate": "2026-11-23",
+  "loc": "LAB1",
+  "frozenDays": 28,
+  "slushyDays": 84,
+  "slushyMaxChange": 0.2,
+  "atRiskDays": 14,
+  "slTarget": {
+   "1": 0.98,
+   "2": 0.95,
+   "3": 0.9
+  },
+  "currency": "USD",
+  "twoPass": true,
+  "makeOffset": true,
+  "lotSizing": true,
+  "reserveSafetyStock": true,
+  "horizonEnd": "2027-06-30"
+ },
+ "items": [
+  {
+   "item": "FG_MTH",
+   "type": "FG",
+   "description": "Memory test handler",
+   "uom": "EA"
+  },
+  {
+   "item": "FG_BIS",
+   "type": "FG",
+   "description": "Burn-in test system",
+   "uom": "EA"
+  },
+  {
+   "item": "FG_WPS",
+   "type": "FG",
+   "description": "Wafer probe station",
+   "uom": "EA"
+  },
+  {
+   "item": "C_FPGA_BRD",
+   "type": "COMP",
+   "description": "FPGA control board",
+   "uom": "EA"
+  },
+  {
+   "item": "C_PSU_3KW",
+   "type": "COMP",
+   "description": "Power supply 3 kW",
+   "uom": "EA"
+  },
+  {
+   "item": "C_PSU_2KW",
+   "type": "COMP",
+   "description": "Power supply 2 kW (alternate to 3 kW, 2-for-1)",
+   "uom": "EA"
+  },
+  {
+   "item": "C_SERVO_A",
+   "type": "COMP",
+   "description": "Servo motor, type A",
+   "uom": "EA"
+  },
+  {
+   "item": "C_SERVO_B",
+   "type": "COMP",
+   "description": "Servo motor, type B (alternate to A)",
+   "uom": "EA"
+  },
+  {
+   "item": "C_BACKPLANE",
+   "type": "COMP",
+   "description": "Main backplane PCB",
+   "uom": "EA"
+  },
+  {
+   "item": "C_VISION_CAM",
+   "type": "COMP",
+   "description": "Vision alignment camera",
+   "uom": "EA"
+  },
+  {
+   "item": "C_VAC_HEAD",
+   "type": "COMP",
+   "description": "Vacuum pick head",
+   "uom": "EA"
+  },
+  {
+   "item": "C_FRAME",
+   "type": "COMP",
+   "description": "Machined chassis frame",
+   "uom": "EA"
+  },
+  {
+   "item": "C_CABLE_KIT",
+   "type": "COMP",
+   "description": "Cable harness kit",
+   "uom": "EA"
+  },
+  {
+   "item": "C_CTRL_PC",
+   "type": "COMP",
+   "description": "Industrial controller PC",
+   "uom": "EA"
+  },
+  {
+   "item": "C_THERM_CHAMBER",
+   "type": "COMP",
+   "description": "Thermal chamber unit",
+   "uom": "EA"
+  },
+  {
+   "item": "C_CHUCK",
+   "type": "COMP",
+   "description": "Thermal wafer chuck",
+   "uom": "EA"
+  },
+  {
+   "item": "C_PROBE_IF",
+   "type": "COMP",
+   "description": "Probe card interface",
+   "uom": "EA"
+  }
+ ],
+ "bom": [
+  {
+   "item": "FG_MTH",
+   "subord": "C_FPGA_BRD",
+   "bomnum": 1,
+   "drawQty": 2
+  },
+  {
+   "item": "FG_MTH",
+   "subord": "C_PSU_3KW",
+   "bomnum": 1,
+   "drawQty": 1
+  },
+  {
+   "item": "FG_MTH",
+   "subord": "C_SERVO_A",
+   "bomnum": 1,
+   "drawQty": 4
+  },
+  {
+   "item": "FG_MTH",
+   "subord": "C_BACKPLANE",
+   "bomnum": 1,
+   "drawQty": 1
+  },
+  {
+   "item": "FG_MTH",
+   "subord": "C_VISION_CAM",
+   "bomnum": 1,
+   "drawQty": 2
+  },
+  {
+   "item": "FG_MTH",
+   "subord": "C_VAC_HEAD",
+   "bomnum": 1,
+   "drawQty": 8
+  },
+  {
+   "item": "FG_MTH",
+   "subord": "C_FRAME",
+   "bomnum": 1,
+   "drawQty": 1
+  },
+  {
+   "item": "FG_MTH",
+   "subord": "C_CABLE_KIT",
+   "bomnum": 1,
+   "drawQty": 1
+  },
+  {
+   "item": "FG_MTH",
+   "subord": "C_CTRL_PC",
+   "bomnum": 1,
+   "drawQty": 1
+  },
+  {
+   "item": "FG_MTH",
+   "subord": "C_FPGA_BRD",
+   "bomnum": 2,
+   "drawQty": 2
+  },
+  {
+   "item": "FG_MTH",
+   "subord": "C_PSU_3KW",
+   "bomnum": 2,
+   "drawQty": 1
+  },
+  {
+   "item": "FG_MTH",
+   "subord": "C_SERVO_B",
+   "bomnum": 2,
+   "drawQty": 4
+  },
+  {
+   "item": "FG_MTH",
+   "subord": "C_BACKPLANE",
+   "bomnum": 2,
+   "drawQty": 1
+  },
+  {
+   "item": "FG_MTH",
+   "subord": "C_VISION_CAM",
+   "bomnum": 2,
+   "drawQty": 2
+  },
+  {
+   "item": "FG_MTH",
+   "subord": "C_VAC_HEAD",
+   "bomnum": 2,
+   "drawQty": 8
+  },
+  {
+   "item": "FG_MTH",
+   "subord": "C_FRAME",
+   "bomnum": 2,
+   "drawQty": 1
+  },
+  {
+   "item": "FG_MTH",
+   "subord": "C_CABLE_KIT",
+   "bomnum": 2,
+   "drawQty": 1
+  },
+  {
+   "item": "FG_MTH",
+   "subord": "C_CTRL_PC",
+   "bomnum": 2,
+   "drawQty": 1
+  },
+  {
+   "item": "FG_BIS",
+   "subord": "C_FPGA_BRD",
+   "bomnum": 1,
+   "drawQty": 4
+  },
+  {
+   "item": "FG_BIS",
+   "subord": "C_PSU_3KW",
+   "bomnum": 1,
+   "drawQty": 2
+  },
+  {
+   "item": "FG_BIS",
+   "subord": "C_BACKPLANE",
+   "bomnum": 1,
+   "drawQty": 2
+  },
+  {
+   "item": "FG_BIS",
+   "subord": "C_THERM_CHAMBER",
+   "bomnum": 1,
+   "drawQty": 1
+  },
+  {
+   "item": "FG_BIS",
+   "subord": "C_FRAME",
+   "bomnum": 1,
+   "drawQty": 1
+  },
+  {
+   "item": "FG_BIS",
+   "subord": "C_CABLE_KIT",
+   "bomnum": 1,
+   "drawQty": 2
+  },
+  {
+   "item": "FG_BIS",
+   "subord": "C_CTRL_PC",
+   "bomnum": 1,
+   "drawQty": 1
+  },
+  {
+   "item": "FG_BIS",
+   "subord": "C_FPGA_BRD",
+   "bomnum": 2,
+   "drawQty": 4
+  },
+  {
+   "item": "FG_BIS",
+   "subord": "C_PSU_2KW",
+   "bomnum": 2,
+   "drawQty": 4
+  },
+  {
+   "item": "FG_BIS",
+   "subord": "C_BACKPLANE",
+   "bomnum": 2,
+   "drawQty": 2
+  },
+  {
+   "item": "FG_BIS",
+   "subord": "C_THERM_CHAMBER",
+   "bomnum": 2,
+   "drawQty": 1
+  },
+  {
+   "item": "FG_BIS",
+   "subord": "C_FRAME",
+   "bomnum": 2,
+   "drawQty": 1
+  },
+  {
+   "item": "FG_BIS",
+   "subord": "C_CABLE_KIT",
+   "bomnum": 2,
+   "drawQty": 2
+  },
+  {
+   "item": "FG_BIS",
+   "subord": "C_CTRL_PC",
+   "bomnum": 2,
+   "drawQty": 1
+  },
+  {
+   "item": "FG_WPS",
+   "subord": "C_FPGA_BRD",
+   "bomnum": 1,
+   "drawQty": 1
+  },
+  {
+   "item": "FG_WPS",
+   "subord": "C_PSU_3KW",
+   "bomnum": 1,
+   "drawQty": 1
+  },
+  {
+   "item": "FG_WPS",
+   "subord": "C_SERVO_A",
+   "bomnum": 1,
+   "drawQty": 2
+  },
+  {
+   "item": "FG_WPS",
+   "subord": "C_CHUCK",
+   "bomnum": 1,
+   "drawQty": 1
+  },
+  {
+   "item": "FG_WPS",
+   "subord": "C_PROBE_IF",
+   "bomnum": 1,
+   "drawQty": 1
+  },
+  {
+   "item": "FG_WPS",
+   "subord": "C_VISION_CAM",
+   "bomnum": 1,
+   "drawQty": 1
+  },
+  {
+   "item": "FG_WPS",
+   "subord": "C_FRAME",
+   "bomnum": 1,
+   "drawQty": 1
+  },
+  {
+   "item": "FG_WPS",
+   "subord": "C_CABLE_KIT",
+   "bomnum": 1,
+   "drawQty": 1
+  },
+  {
+   "item": "FG_WPS",
+   "subord": "C_CTRL_PC",
+   "bomnum": 1,
+   "drawQty": 1
+  }
+ ],
+ "forecast": [
+  {
+   "id": "D01",
+   "item": "FG_MTH",
+   "needDate": "2027-01-04",
+   "qty": 4,
+   "priority": 1,
+   "customer": "CUST_A"
+  },
+  {
+   "id": "D02",
+   "item": "FG_MTH",
+   "needDate": "2027-01-25",
+   "qty": 6,
+   "priority": 1,
+   "customer": "CUST_A"
+  },
+  {
+   "id": "D03",
+   "item": "FG_MTH",
+   "needDate": "2027-02-22",
+   "qty": 8,
+   "priority": 2,
+   "customer": "CUST_B"
+  },
+  {
+   "id": "D04",
+   "item": "FG_MTH",
+   "needDate": "2027-03-22",
+   "qty": 8,
+   "priority": 1,
+   "customer": "CUST_A"
+  },
+  {
+   "id": "D05",
+   "item": "FG_MTH",
+   "needDate": "2027-04-26",
+   "qty": 10,
+   "priority": 1,
+   "customer": "CUST_A"
+  },
+  {
+   "id": "D06",
+   "item": "FG_MTH",
+   "needDate": "2027-05-24",
+   "qty": 10,
+   "priority": 2,
+   "customer": "CUST_B"
+  },
+  {
+   "id": "D07",
+   "item": "FG_MTH",
+   "needDate": "2027-06-21",
+   "qty": 12,
+   "priority": 1,
+   "customer": "CUST_A"
+  },
+  {
+   "id": "D08",
+   "item": "FG_BIS",
+   "needDate": "2027-01-04",
+   "qty": 2,
+   "priority": 2,
+   "customer": "CUST_B"
+  },
+  {
+   "id": "D09",
+   "item": "FG_BIS",
+   "needDate": "2027-01-25",
+   "qty": 3,
+   "priority": 2,
+   "customer": "CUST_B"
+  },
+  {
+   "id": "D10",
+   "item": "FG_BIS",
+   "needDate": "2027-02-22",
+   "qty": 3,
+   "priority": 3,
+   "customer": "CUST_C"
+  },
+  {
+   "id": "D11",
+   "item": "FG_BIS",
+   "needDate": "2027-03-22",
+   "qty": 4,
+   "priority": 2,
+   "customer": "CUST_B"
+  },
+  {
+   "id": "D12",
+   "item": "FG_BIS",
+   "needDate": "2027-04-26",
+   "qty": 4,
+   "priority": 3,
+   "customer": "CUST_C"
+  },
+  {
+   "id": "D13",
+   "item": "FG_BIS",
+   "needDate": "2027-05-24",
+   "qty": 5,
+   "priority": 2,
+   "customer": "CUST_B"
+  },
+  {
+   "id": "D14",
+   "item": "FG_BIS",
+   "needDate": "2027-06-21",
+   "qty": 5,
+   "priority": 3,
+   "customer": "CUST_C"
+  },
+  {
+   "id": "D15",
+   "item": "FG_WPS",
+   "needDate": "2027-01-04",
+   "qty": 1,
+   "priority": 3,
+   "customer": "CUST_C"
+  },
+  {
+   "id": "D16",
+   "item": "FG_WPS",
+   "needDate": "2027-01-25",
+   "qty": 2,
+   "priority": 1,
+   "customer": "CUST_A"
+  },
+  {
+   "id": "D17",
+   "item": "FG_WPS",
+   "needDate": "2027-02-22",
+   "qty": 2,
+   "priority": 3,
+   "customer": "CUST_C"
+  },
+  {
+   "id": "D18",
+   "item": "FG_WPS",
+   "needDate": "2027-03-22",
+   "qty": 3,
+   "priority": 2,
+   "customer": "CUST_B"
+  },
+  {
+   "id": "D19",
+   "item": "FG_WPS",
+   "needDate": "2027-04-26",
+   "qty": 3,
+   "priority": 3,
+   "customer": "CUST_C"
+  },
+  {
+   "id": "D20",
+   "item": "FG_WPS",
+   "needDate": "2027-05-24",
+   "qty": 3,
+   "priority": 1,
+   "customer": "CUST_A"
+  },
+  {
+   "id": "D21",
+   "item": "FG_WPS",
+   "needDate": "2027-06-21",
+   "qty": 4,
+   "priority": 2,
+   "customer": "CUST_B"
+  }
+ ],
+ "customers": [
+  {
+   "id": "CUST_A",
+   "description": "Strategic memory fab (HBM ramp)"
+  },
+  {
+   "id": "CUST_B",
+   "description": "Key OSAT partner"
+  },
+  {
+   "id": "CUST_C",
+   "description": "Standard account"
+  },
+  {
+   "id": "CUST_D",
+   "description": "New account (scenario only)"
+  }
+ ],
+ "inventory": [
+  {
+   "item": "C_FPGA_BRD",
+   "onHand": 21,
+   "safetyStock": 4
+  },
+  {
+   "item": "C_PSU_3KW",
+   "onHand": 13,
+   "safetyStock": 4
+  },
+  {
+   "item": "C_PSU_2KW",
+   "onHand": 12,
+   "safetyStock": 0
+  },
+  {
+   "item": "C_SERVO_A",
+   "onHand": 26,
+   "safetyStock": 8
+  },
+  {
+   "item": "C_SERVO_B",
+   "onHand": 24,
+   "safetyStock": 0
+  },
+  {
+   "item": "C_BACKPLANE",
+   "onHand": 10,
+   "safetyStock": 2
+  },
+  {
+   "item": "C_VISION_CAM",
+   "onHand": 11,
+   "safetyStock": 2
+  },
+  {
+   "item": "C_VAC_HEAD",
+   "onHand": 45,
+   "safetyStock": 10
+  },
+  {
+   "item": "C_FRAME",
+   "onHand": 9,
+   "safetyStock": 1
+  },
+  {
+   "item": "C_CABLE_KIT",
+   "onHand": 12,
+   "safetyStock": 2
+  },
+  {
+   "item": "C_CTRL_PC",
+   "onHand": 9,
+   "safetyStock": 1
+  },
+  {
+   "item": "C_THERM_CHAMBER",
+   "onHand": 2,
+   "safetyStock": 0
+  },
+  {
+   "item": "C_CHUCK",
+   "onHand": 1,
+   "safetyStock": 0
+  },
+  {
+   "item": "C_PROBE_IF",
+   "onHand": 1,
+   "safetyStock": 0
+  }
+ ],
+ "openPOs": [
+  {
+   "po": "OPO-1001",
+   "item": "C_FPGA_BRD",
+   "vendor": "V_ALPHA",
+   "qty": 30,
+   "due": "2026-12-14"
+  },
+  {
+   "po": "OPO-1002",
+   "item": "C_FPGA_BRD",
+   "vendor": "V_ALPHA",
+   "qty": 40,
+   "due": "2027-01-11"
+  },
+  {
+   "po": "OPO-1003",
+   "item": "C_FPGA_BRD",
+   "vendor": "V_BETA",
+   "qty": 25,
+   "due": "2027-02-08"
+  },
+  {
+   "po": "OPO-1004",
+   "item": "C_PSU_3KW",
+   "vendor": "V_GAMMA",
+   "qty": 20,
+   "due": "2026-12-14"
+  },
+  {
+   "po": "OPO-1005",
+   "item": "C_SERVO_A",
+   "vendor": "V_EPSILON",
+   "qty": 30,
+   "due": "2026-12-14"
+  },
+  {
+   "po": "OPO-1006",
+   "item": "C_SERVO_A",
+   "vendor": "V_EPSILON",
+   "qty": 30,
+   "due": "2027-01-11"
+  },
+  {
+   "po": "OPO-1007",
+   "item": "C_VISION_CAM",
+   "vendor": "V_ETA",
+   "qty": 16,
+   "due": "2026-12-14"
+  },
+  {
+   "po": "OPO-1008",
+   "item": "C_VISION_CAM",
+   "vendor": "V_ETA",
+   "qty": 20,
+   "due": "2027-02-15"
+  },
+  {
+   "po": "OPO-1009",
+   "item": "C_THERM_CHAMBER",
+   "vendor": "V_LAMBDA",
+   "qty": 4,
+   "due": "2026-12-21"
+  },
+  {
+   "po": "OPO-1010",
+   "item": "C_THERM_CHAMBER",
+   "vendor": "V_LAMBDA",
+   "qty": 4,
+   "due": "2027-01-18"
+  },
+  {
+   "po": "OPO-1011",
+   "item": "C_CHUCK",
+   "vendor": "V_MU",
+   "qty": 4,
+   "due": "2026-12-14"
+  },
+  {
+   "po": "OPO-1012",
+   "item": "C_CHUCK",
+   "vendor": "V_MU",
+   "qty": 3,
+   "due": "2027-02-08"
+  },
+  {
+   "po": "OPO-1013",
+   "item": "C_PROBE_IF",
+   "vendor": "V_MU",
+   "qty": 4,
+   "due": "2026-12-14"
+  },
+  {
+   "po": "OPO-1014",
+   "item": "C_PROBE_IF",
+   "vendor": "V_MU",
+   "qty": 3,
+   "due": "2027-02-08"
+  },
+  {
+   "po": "OPO-1015",
+   "item": "C_BACKPLANE",
+   "vendor": "V_GAMMA",
+   "qty": 15,
+   "due": "2026-12-21"
+  },
+  {
+   "po": "OPO-1016",
+   "item": "C_FRAME",
+   "vendor": "V_IOTA",
+   "qty": 14,
+   "due": "2026-12-14"
+  },
+  {
+   "po": "OPO-1017",
+   "item": "C_CTRL_PC",
+   "vendor": "V_KAPPA",
+   "qty": 12,
+   "due": "2026-12-14"
+  },
+  {
+   "po": "OPO-1018",
+   "item": "C_PSU_3KW",
+   "vendor": "V_GAMMA",
+   "qty": 20,
+   "due": "2027-02-15"
+  }
+ ],
+ "makeMethods": [
+  {
+   "item": "FG_MTH",
+   "bomnum": 1,
+   "method": "FG_MTH_MAKE1",
+   "leadTime": 21
+  },
+  {
+   "item": "FG_MTH",
+   "bomnum": 2,
+   "method": "FG_MTH_MAKE2",
+   "leadTime": 21
+  },
+  {
+   "item": "FG_BIS",
+   "bomnum": 1,
+   "method": "FG_BIS_MAKE1",
+   "leadTime": 28
+  },
+  {
+   "item": "FG_BIS",
+   "bomnum": 2,
+   "method": "FG_BIS_MAKE2",
+   "leadTime": 28
+  },
+  {
+   "item": "FG_WPS",
+   "bomnum": 1,
+   "method": "FG_WPS_MAKE1",
+   "leadTime": 35
+  }
+ ],
+ "buyMethods": [
+  {
+   "item": "C_FPGA_BRD",
+   "vendor": "V_ALPHA",
+   "method": "C_FPGA_BRD_BUY_ALPHA",
+   "leadTime": 140,
+   "moq": 10,
+   "lotMultiple": 5,
+   "qualified": true,
+   "primary": true
+  },
+  {
+   "item": "C_FPGA_BRD",
+   "vendor": "V_BETA",
+   "method": "C_FPGA_BRD_BUY_BETA",
+   "leadTime": 112,
+   "moq": 5,
+   "lotMultiple": 5,
+   "qualified": true,
+   "primary": false
+  },
+  {
+   "item": "C_PSU_3KW",
+   "vendor": "V_GAMMA",
+   "method": "C_PSU_3KW_BUY_GAMMA",
+   "leadTime": 70,
+   "moq": 10,
+   "lotMultiple": 10,
+   "qualified": true,
+   "primary": true
+  },
+  {
+   "item": "C_PSU_2KW",
+   "vendor": "V_DELTA",
+   "method": "C_PSU_2KW_BUY_DELTA",
+   "leadTime": 42,
+   "moq": 10,
+   "lotMultiple": 10,
+   "qualified": true,
+   "primary": true
+  },
+  {
+   "item": "C_SERVO_A",
+   "vendor": "V_EPSILON",
+   "method": "C_SERVO_A_BUY_EPSILON",
+   "leadTime": 84,
+   "moq": 20,
+   "lotMultiple": 10,
+   "qualified": true,
+   "primary": true
+  },
+  {
+   "item": "C_SERVO_B",
+   "vendor": "V_ZETA",
+   "method": "C_SERVO_B_BUY_ZETA",
+   "leadTime": 56,
+   "moq": 20,
+   "lotMultiple": 10,
+   "qualified": true,
+   "primary": true
+  },
+  {
+   "item": "C_BACKPLANE",
+   "vendor": "V_GAMMA",
+   "method": "C_BACKPLANE_BUY_GAMMA",
+   "leadTime": 56,
+   "moq": 10,
+   "lotMultiple": 5,
+   "qualified": true,
+   "primary": true
+  },
+  {
+   "item": "C_VISION_CAM",
+   "vendor": "V_ETA",
+   "method": "C_VISION_CAM_BUY_ETA",
+   "leadTime": 98,
+   "moq": 5,
+   "lotMultiple": 5,
+   "qualified": true,
+   "primary": true
+  },
+  {
+   "item": "C_VISION_CAM",
+   "vendor": "V_THETA",
+   "method": "C_VISION_CAM_BUY_THETA",
+   "leadTime": 70,
+   "moq": 5,
+   "lotMultiple": 5,
+   "qualified": true,
+   "primary": false
+  },
+  {
+   "item": "C_VAC_HEAD",
+   "vendor": "V_EPSILON",
+   "method": "C_VAC_HEAD_BUY_EPSILON",
+   "leadTime": 42,
+   "moq": 50,
+   "lotMultiple": 50,
+   "qualified": true,
+   "primary": true
+  },
+  {
+   "item": "C_FRAME",
+   "vendor": "V_IOTA",
+   "method": "C_FRAME_BUY_IOTA",
+   "leadTime": 63,
+   "moq": 5,
+   "lotMultiple": 1,
+   "qualified": true,
+   "primary": true
+  },
+  {
+   "item": "C_CABLE_KIT",
+   "vendor": "V_IOTA",
+   "method": "C_CABLE_KIT_BUY_IOTA",
+   "leadTime": 28,
+   "moq": 10,
+   "lotMultiple": 10,
+   "qualified": true,
+   "primary": true
+  },
+  {
+   "item": "C_CTRL_PC",
+   "vendor": "V_KAPPA",
+   "method": "C_CTRL_PC_BUY_KAPPA",
+   "leadTime": 49,
+   "moq": 5,
+   "lotMultiple": 5,
+   "qualified": true,
+   "primary": true
+  },
+  {
+   "item": "C_THERM_CHAMBER",
+   "vendor": "V_LAMBDA",
+   "method": "C_THERM_CHAMBER_BUY_LAMBDA",
+   "leadTime": 112,
+   "moq": 2,
+   "lotMultiple": 1,
+   "qualified": true,
+   "primary": true
+  },
+  {
+   "item": "C_CHUCK",
+   "vendor": "V_MU",
+   "method": "C_CHUCK_BUY_MU",
+   "leadTime": 126,
+   "moq": 1,
+   "lotMultiple": 1,
+   "qualified": true,
+   "primary": true
+  },
+  {
+   "item": "C_PROBE_IF",
+   "vendor": "V_MU",
+   "method": "C_PROBE_IF_BUY_MU",
+   "leadTime": 105,
+   "moq": 1,
+   "lotMultiple": 1,
+   "qualified": true,
+   "primary": true
+  }
+ ],
+ "priceTiers": [
+  {
+   "item": "C_FPGA_BRD",
+   "vendor": "V_ALPHA",
+   "tierMinQty": 0,
+   "unitPrice": 4200,
+   "effFrom": "2026-01-01",
+   "effTo": "2027-12-31"
+  },
+  {
+   "item": "C_FPGA_BRD",
+   "vendor": "V_ALPHA",
+   "tierMinQty": 60,
+   "unitPrice": 3900,
+   "effFrom": "2026-01-01",
+   "effTo": "2027-12-31"
+  },
+  {
+   "item": "C_FPGA_BRD",
+   "vendor": "V_BETA",
+   "tierMinQty": 0,
+   "unitPrice": 4650,
+   "effFrom": "2026-01-01",
+   "effTo": "2027-12-31"
+  },
+  {
+   "item": "C_PSU_3KW",
+   "vendor": "V_GAMMA",
+   "tierMinQty": 0,
+   "unitPrice": 1850,
+   "effFrom": "2026-01-01",
+   "effTo": "2027-12-31"
+  },
+  {
+   "item": "C_PSU_3KW",
+   "vendor": "V_GAMMA",
+   "tierMinQty": 60,
+   "unitPrice": 1700,
+   "effFrom": "2026-01-01",
+   "effTo": "2027-12-31"
+  },
+  {
+   "item": "C_PSU_2KW",
+   "vendor": "V_DELTA",
+   "tierMinQty": 0,
+   "unitPrice": 1050,
+   "effFrom": "2026-01-01",
+   "effTo": "2027-12-31"
+  },
+  {
+   "item": "C_PSU_2KW",
+   "vendor": "V_DELTA",
+   "tierMinQty": 80,
+   "unitPrice": 980,
+   "effFrom": "2026-01-01",
+   "effTo": "2027-12-31"
+  },
+  {
+   "item": "C_SERVO_A",
+   "vendor": "V_EPSILON",
+   "tierMinQty": 0,
+   "unitPrice": 640,
+   "effFrom": "2026-01-01",
+   "effTo": "2027-12-31"
+  },
+  {
+   "item": "C_SERVO_A",
+   "vendor": "V_EPSILON",
+   "tierMinQty": 200,
+   "unitPrice": 590,
+   "effFrom": "2026-01-01",
+   "effTo": "2027-12-31"
+  },
+  {
+   "item": "C_SERVO_B",
+   "vendor": "V_ZETA",
+   "tierMinQty": 0,
+   "unitPrice": 780,
+   "effFrom": "2026-01-01",
+   "effTo": "2027-12-31"
+  },
+  {
+   "item": "C_BACKPLANE",
+   "vendor": "V_GAMMA",
+   "tierMinQty": 0,
+   "unitPrice": 2200,
+   "effFrom": "2026-01-01",
+   "effTo": "2027-12-31"
+  },
+  {
+   "item": "C_BACKPLANE",
+   "vendor": "V_GAMMA",
+   "tierMinQty": 50,
+   "unitPrice": 2050,
+   "effFrom": "2026-01-01",
+   "effTo": "2027-12-31"
+  },
+  {
+   "item": "C_VISION_CAM",
+   "vendor": "V_ETA",
+   "tierMinQty": 0,
+   "unitPrice": 3500,
+   "effFrom": "2026-01-01",
+   "effTo": "2027-12-31"
+  },
+  {
+   "item": "C_VISION_CAM",
+   "vendor": "V_ETA",
+   "tierMinQty": 50,
+   "unitPrice": 3300,
+   "effFrom": "2026-01-01",
+   "effTo": "2027-12-31"
+  },
+  {
+   "item": "C_VISION_CAM",
+   "vendor": "V_THETA",
+   "tierMinQty": 0,
+   "unitPrice": 3900,
+   "effFrom": "2026-01-01",
+   "effTo": "2027-12-31"
+  },
+  {
+   "item": "C_VAC_HEAD",
+   "vendor": "V_EPSILON",
+   "tierMinQty": 0,
+   "unitPrice": 180,
+   "effFrom": "2026-01-01",
+   "effTo": "2027-12-31"
+  },
+  {
+   "item": "C_VAC_HEAD",
+   "vendor": "V_EPSILON",
+   "tierMinQty": 300,
+   "unitPrice": 160,
+   "effFrom": "2026-01-01",
+   "effTo": "2027-12-31"
+  },
+  {
+   "item": "C_FRAME",
+   "vendor": "V_IOTA",
+   "tierMinQty": 0,
+   "unitPrice": 6100,
+   "effFrom": "2026-01-01",
+   "effTo": "2027-12-31"
+  },
+  {
+   "item": "C_FRAME",
+   "vendor": "V_IOTA",
+   "tierMinQty": 40,
+   "unitPrice": 5800,
+   "effFrom": "2026-01-01",
+   "effTo": "2027-12-31"
+  },
+  {
+   "item": "C_CABLE_KIT",
+   "vendor": "V_IOTA",
+   "tierMinQty": 0,
+   "unitPrice": 900,
+   "effFrom": "2026-01-01",
+   "effTo": "2027-12-31"
+  },
+  {
+   "item": "C_CABLE_KIT",
+   "vendor": "V_IOTA",
+   "tierMinQty": 60,
+   "unitPrice": 850,
+   "effFrom": "2026-01-01",
+   "effTo": "2027-12-31"
+  },
+  {
+   "item": "C_CTRL_PC",
+   "vendor": "V_KAPPA",
+   "tierMinQty": 0,
+   "unitPrice": 2800,
+   "effFrom": "2026-01-01",
+   "effTo": "2027-12-31"
+  },
+  {
+   "item": "C_CTRL_PC",
+   "vendor": "V_KAPPA",
+   "tierMinQty": 40,
+   "unitPrice": 2650,
+   "effFrom": "2026-01-01",
+   "effTo": "2027-12-31"
+  },
+  {
+   "item": "C_THERM_CHAMBER",
+   "vendor": "V_LAMBDA",
+   "tierMinQty": 0,
+   "unitPrice": 18500,
+   "effFrom": "2026-01-01",
+   "effTo": "2027-12-31"
+  },
+  {
+   "item": "C_THERM_CHAMBER",
+   "vendor": "V_LAMBDA",
+   "tierMinQty": 20,
+   "unitPrice": 17600,
+   "effFrom": "2026-01-01",
+   "effTo": "2027-12-31"
+  },
+  {
+   "item": "C_CHUCK",
+   "vendor": "V_MU",
+   "tierMinQty": 0,
+   "unitPrice": 22000,
+   "effFrom": "2026-01-01",
+   "effTo": "2027-12-31"
+  },
+  {
+   "item": "C_CHUCK",
+   "vendor": "V_MU",
+   "tierMinQty": 15,
+   "unitPrice": 21000,
+   "effFrom": "2026-01-01",
+   "effTo": "2027-12-31"
+  },
+  {
+   "item": "C_PROBE_IF",
+   "vendor": "V_MU",
+   "tierMinQty": 0,
+   "unitPrice": 15400,
+   "effFrom": "2026-01-01",
+   "effTo": "2027-12-31"
+  },
+  {
+   "item": "C_PROBE_IF",
+   "vendor": "V_MU",
+   "tierMinQty": 15,
+   "unitPrice": 14800,
+   "effFrom": "2026-01-01",
+   "effTo": "2027-12-31"
+  }
+ ]
+}
